@@ -4,16 +4,16 @@ public class Interval {
 	private int ondergrens; 
 	private int lengte; 
 	
-	static int getOndergrens(Interval interval) {
-		return interval.ondergrens;
+	int getOndergrens() {
+		return this.ondergrens;
 	}
-	static int getBovengrens(Interval interval) {
-		return interval.ondergrens + interval.lengte;
+	int getBovengrens() {
+		return this.ondergrens + this.lengte;
 	}
-	static void setOndergrens(Interval interval, int ondergrens) {
-		interval.ondergrens = ondergrens; 
+	void setOndergrens(int ondergrens) {
+		this.ondergrens = ondergrens; 
 	}
-	static void setBovengrens(Interval interval, int bovengrens) {
-		interval.lengte = bovengrens - interval.ondergrens;
+	void setBovengrens(int bovengrens) {
+		this.lengte = bovengrens - this.ondergrens;
 	}
 }

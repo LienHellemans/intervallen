@@ -9,9 +9,9 @@ class intervallenTest {
 	@Test
 	void test() {
 		Interval myInterval = new Interval() ;
-		Interval.setOndergrens(myInterval, 3); 
-		Interval.setBovengrens(myInterval, 7); 
-		int lengte = Interval.getBovengrens(myInterval) - Interval.getOndergrens(myInterval);
+		myInterval.setOndergrens(3); 
+		myInterval.setBovengrens(7); 
+		int lengte = myInterval.getBovengrens() - myInterval.getOndergrens();
 		assertEquals(4,lengte); 
 	}
 
