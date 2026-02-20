@@ -10,6 +10,12 @@ public class Interval {
 	int getBovengrens() {
 		return this.ondergrens + this.lengte;
 	}
+	
+	Interval(int ondergrens, int bovengrens){
+		this.ondergrens = ondergrens; 
+		this.lengte = bovengrens - ondergrens;
+	}
+	
 	void setOndergrens(int ondergrens) {
 		this.ondergrens = ondergrens; 
 	}
